@@ -1,0 +1,33 @@
+.chempionats-wrapper {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  z-index: 5;
+}
+
+.chempionats {
+  width: 327px;
+  height: 428px;
+  background-color: #1a506c;
+  padding: 20px;
+  &-item {
+    width: 100%;
+    height: calc(388px/9);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    border-bottom: 1px solid #3e6c83;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    &:hover {
+      cursor: pointer;
+      background-color: #144056;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

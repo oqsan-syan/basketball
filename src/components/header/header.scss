@@ -1,0 +1,142 @@
+.header {
+  &__top {
+    background-image: url('./assets/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 25px 0;
+  }
+}
+
+.container-top {
+  width: 1170px;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 66px;
+  &-list {
+    width: 745px;
+    max-width: 745px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+      line-height: 20px;
+      color: #ffffff;
+      &:hover {
+        color: #db3259;
+      }
+    }
+  }
+  &-btn {
+    width: 25px;
+    margin-left: 154px;
+    &__icon {
+      height: 12px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+    }
+    &__icon-line {
+      height: 2px;
+      width: 100%;
+      border-radius: 1px;
+      background-color: #ffffff;
+      &::after,
+      &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        height: 2px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: #ffffff;
+        z-index: 3;
+        border-radius: 1px;
+      }
+      &::after {
+        bottom: 0;
+      }
+      &::before {
+        top: 0;
+      }
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 20px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+}
+
+// Header Bottom
+.header__bottom-wrapper {
+  background: rgba($color: #222222, $alpha: 0.4);
+}
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+}
+.header-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+}
+.header-date__item {
+  width: 117px;
+  height: 40px;
+  background-image: linear-gradient(0.0deg, #db3259 0%, #db3259 100%);
+  line-height: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  margin-right: 7px;
+  transition: all .3s ease-in;
+  &:hover {
+    background-color: #ba1d41;
+  }
+  &#calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .calendar-icon {
+      margin-right: 7px;
+    }
+    .calendar__date {
+      line-height: 1;
+    }
+  }
+}
+
+.header-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__item {
+    width: 53px;
+    height: 53px;
+    border: 1px solid #e8ecf2;
+    border-radius: 50%;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,11 @@
+.forecast {
+  margin-top: 45px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

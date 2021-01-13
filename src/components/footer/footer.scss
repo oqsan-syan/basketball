@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 53px;
+  padding: 37px 0;
+  background-color: #0c364a;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 300;
+  color: rgba(#fff, 0.7);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
